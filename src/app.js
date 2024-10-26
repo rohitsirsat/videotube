@@ -34,4 +34,10 @@ app.use(express.static("public"));
 app.use(cookieParser());
 app.use(morganMiddleware);
 
+// import all routes
+import healthcheckRouter from "./routes/healthheck.routes.js";
+
+// create route
+app.use("/api/v1/healthcheck", healthcheckRouter);
+
 export { app };

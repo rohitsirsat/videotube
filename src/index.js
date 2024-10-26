@@ -12,7 +12,7 @@ connectDB()
       console.log("app error in main index.js ", error);
       throw error;
     });
-    app.listen(process.env.PORT || 8000, () => {
+    app.listen(process.env.PORT || 8001, () => {
       console.log(`⚙️ Server is running on port : ${process.env.PORT}`);
     });
   })
